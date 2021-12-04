@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App .addressInput {
+  font-size: 20px;
+  color: red;
+}
+
+.App .eth-logo img{
+  height: 40%;
+  width: 40%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@keyframes rotate{
+
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+.eth-logo:after{
+  transform:rotate(-57deg);
+}
+
+.eth-logo:before{
+  transform:rotate(57deg);
+}
+
+.App .text h3{
+  padding-top: 25px;
+  padding-bottom:25px;
+}
+
+.App .text h2{
+  text-align: center;
+  padding-top:25px;
+}
+
+.App input {
+  width: 50%;
+  padding: 15px 22px;
+  box-sizing: border-box; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(to bottom, rgb(1, 54, 199), hsl(335, 94%, 36%));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
